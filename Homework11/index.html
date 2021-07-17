@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <form name="frm" autocomplete="off">
+      <p><b>Введите значение:</b><br>
+        <input id="nameOfEvent" type="text" placeholder="текст">
+        <button id="addTo" type="submit">Добавить</button>
+        <button id="resetBtn" type="reset">Очистить</button>
+      </p>
+     </form>
+     <div class="list">
+       <h2>Список дел</h1>
+        <ul id="listOfEvents"></ul>
+     </div>
+  </body>
+</html>

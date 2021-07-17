@@ -1,0 +1,11 @@
+.container{
+	width: 1366px;
+	margin: auto;
+}
+div{
+  width: 200px;
+}
+ul{
+  font-size: 20px;
+  font-weight: 900;
+}
