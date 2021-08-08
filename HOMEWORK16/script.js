@@ -22,7 +22,6 @@ clientNatalia.sayHello();Ad
 
 
 //2 задача
-
 function Person(name) {
     this.name = name;
     this.sayHello = function() {
@@ -39,11 +38,17 @@ function Client(name) {
 }
   
 const personJohn = new Person("John");
+personJohn.sayHello();
+
+Employee.prototype.sayHello = function() {
+      console.log(`Hello, I'm ${this.name}`);
+    }
+Client.prototype.sayHello = function() {
+      console.log(`Hello, I'm ${this.name}`);
+    }
 const sysAdmin = new Employee("Bob");
-sysAdmin.__proto__ = personJohn;
 sysAdmin.sayHello();
 const clientNatalia = new Client("Natalia");
-clientNatalia.__proto__ = personJohn;
 clientNatalia.sayHello();
 
 //3 задача
