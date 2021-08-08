@@ -53,7 +53,7 @@ function Student(name, markArray){
     this.markArray = markArray;
     this.averageMark = function() {
         let totalAmount = this.markArray.reduce((total, amount) => total + amount)/this.markArray.length; 
-        console.log(Math.round(totalAmount))
+        return(Math.round(totalAmount))
       }
 }
 
