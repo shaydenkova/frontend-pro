@@ -20,18 +20,15 @@ class Hamburger {
 		}
 		return this.size.calories + toppingCalories;
 	}
+	static SIZE_SMALL = {price: 50, calories: 20};
+	static SIZE_MEDIUM = {price: 75, calories: 30};
+	static SIZE_BIG = {price: 100, calories: 40};
+	static TOPPING_CHEESE = {price: 10, calories: 20};
+	static TOPPING_SALADE = {price: 20, calories: 5};
+	static TOPPING_POTATO = {price: 15, calories: 10};
+	static TOPPING_SPICE = {price: 15, calories: 0};
+	static TOPPING_MAYO = {price: 52, calories: 50};
 }
-
-Hamburger.SIZE_SMALL = {price: 50, calories: 20};
-Hamburger.SIZE_MEDIUM = {price: 75, calories: 30};
-Hamburger.SIZE_BIG = {price: 100, calories: 40};
-
-Hamburger.TOPPING_CHEESE = {price: 10, calories: 20};
-Hamburger.TOPPING_SALADE = {price: 20, calories: 5};
-Hamburger.TOPPING_POTATO = {price: 15, calories: 10};
-Hamburger.TOPPING_SPICE = {price: 15, calories: 0};
-Hamburger.TOPPING_MAYO = {price: 52, calories: 50};
-
 
 const hamburger = new Hamburger(Hamburger.SIZE_SMALL);
 
@@ -42,5 +39,4 @@ hamburger.addTopping(Hamburger.TOPPING_CHEESE);
 
 console.log("Price with sauce: " + hamburger.getPrice());
 console.log("Calories with sauce: " + hamburger.getCalories());
-
 
