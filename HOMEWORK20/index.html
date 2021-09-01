@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <table class="container">
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена за кг.</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td><input type="text" id="nameItem"></td>
+                <td><input type="text" id="priceItem"></td>
+                <td><input type="text" id="quantItem"></td>
+                <td></td>
+                <td><button class="btn" onclick="addItem()">Добавить</button></td>
+            </tr>
+            <tr>
+                <td>Груша</td>
+                <td>25</td>
+                <td>10</td>
+                <td class="totalItemAmount">250</td>
+                <td><button class="btn" onclick="removeItem(event)">Удалить</button></td>
+            </tr>
+            <tr>
+                <td>Яблоко</td>
+                <td>18</td>
+                <td>5</td>
+                <td class="totalItemAmount">90</td>
+                <td><button class="btn" onclick="removeItem(event)">Удалить</button></td>
+            </tr>
+            <tr>
+                <td>Апельсин</td>
+                <td>20</td>
+                <td>15</td>
+                <td class="totalItemAmount">300</td>
+                <td><button class="btn" onclick="removeItem(event)">Удалить</button></td>
+            </tr>
+        </tbody>  
+    </table>
+    <div class="container" id="totalAmount"></div>
+</body>
+</html>
