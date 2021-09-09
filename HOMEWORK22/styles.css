@@ -1,0 +1,47 @@
+.hidden{
+	display: none;
+}
+.sectionInputCity{
+	margin: 30px auto;
+	text-align: center;
+}
+.sectionWeather{
+	margin: 30px auto;
+	width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.66);
+	background: url("background.jpg") no-repeat;
+	background-size: 300px 200px;
+	color: #FCF7F6;
+	font-family: sans-serif;
+}
+.sectionWeatherBlock {
+	display: flex;
+	justify-content: space-between;
+}
+.sectionRight {
+	padding-right: 20px;
+	padding-top: 50px;
+}
+#city {
+	font-size: 30px;
+	padding: 20px 0px 5px 20px;
+}
+#wind, #humidity, #wind, #pressure {
+	font-size: 18px;
+	padding-top: 5px;
+	text-align: right;
+}
+#temp {
+	font-size: 30px;
+	padding: 20px 0px 5px 20px;
+	font-weight: 600;
+}
+#clouds {
+	font-size: 18px;
+	padding: 10px 0px 5px 20px;
+}
+
+
